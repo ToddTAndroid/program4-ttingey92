@@ -1,0 +1,66 @@
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="edu.uwyo.toddt.checkbook.TransFragment"
+    android:id="@+id/catSwitcher">
+
+    <!-- Category table view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ListView
+            android:id="@+id/cat_listV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <!-- Category add/edit view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingTop="10dp"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:text="@string/lbl_cat_enter" />
+
+        <EditText
+            android:id="@+id/cat_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="10pt"
+            android:hint="Category Name"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnCatSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Save"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btnCatDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Delete"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</ViewSwitcher>

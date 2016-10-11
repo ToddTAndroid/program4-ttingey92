@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Check Book</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_date">Date: </string>
+    <string name="lbl_type">Transaction Type: </string>
+    <string name="lbl_name">Transaction name: </string>
+    <string name="lbl_amount">Amount Paid: </string>
+    <string name="lbl_category">Choose a Category: </string>
+    <string name="lbl_cat_enter">Enter Category: </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
